@@ -8,7 +8,7 @@ input.onButtonPressed(Button.B, function () {
     player.move(1)
 })
 input.onLogoEvent(TouchButtonEvent.Pressed, function () {
-    datalogger.log(datalogger.createCV("" + username + "_score", 0))
+    datalogger.log(datalogger.createCV("" + username + "_score", game.score()))
 })
 function runGame () {
     player = game.createSprite(2, 2)
@@ -17,7 +17,7 @@ function runGame () {
 let player: game.LedSprite = null
 let username = ""
 runGame()
-username = "Daniel"
+username = "imtrollmastr"
 basic.forever(function () {
     basic.pause(15000)
     game.addScore(1)
